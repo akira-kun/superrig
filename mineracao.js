@@ -24,7 +24,7 @@ function pegaDados(a) {
 
     dadosMineracao = JSON.parse(a["contents"]);
     //document.getElementById("tela").innerHTML="<pre style='background: #FFF'>"+JSON.stringify(dadosMineracao,null,2)+"</pre>";
-    //console.log(dadosMineracao);
+    console.log(dadosMineracao);
 
     ultimopagamento = dadosMineracao["ultimos_pagamentos"][0];
     ultimopagamento = ultimopagamento.split("-");
