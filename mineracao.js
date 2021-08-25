@@ -65,6 +65,7 @@ function pegaDados(a) {
                 data_final = data_inicial;
             }
             var diff = Math.ceil(Math.abs((data_final - data_inicial) / (24 * 60 * 60 * 1000))) + 1;
+            if (j==11) diff = 2;
             //diff = 31;
             participacao+= diff * dadosMineracao["gpus"][j][2];
             placas.push(dadosMineracao["gpus"][j][1] + "("+diff+")");
