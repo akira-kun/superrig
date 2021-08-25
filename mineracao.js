@@ -213,7 +213,7 @@ function atualizaAReceber() {
                 }
                 //alert(JSON.stringify(dadosMineracao["ganhos"][mes][i]) + " : " + parseFloat(tpl.dados[i].ganho_mensal))
             }
-            if (i == 5) dadosMineracao["dono_investimento"][i] = 2400;
+            if (i == 5) dadosMineracao["dono_investimento"][i] = 4740;
             tpl.cadastrar(i, "progresso", ((preco*(tpl.dados[i].recebido+tpl.dados[i].ganho_mensal)*100) / (dadosMineracao["dono_investimento"][i])).toFixed(2));
             //console.log(i, preco, tpl.dados[i].recebido, tpl.dados[i].ganho_mensal, dadosMineracao["dono_investimento"][i], ((preco*(tpl.dados[i].recebido+tpl.dados[i].ganho_mensal)*100) / (dadosMineracao["dono_investimento"][i])));//.toFixed(1)
             //console.log(i, tpl.dados[i].progresso);
