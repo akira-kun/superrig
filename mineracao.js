@@ -65,10 +65,10 @@ function pegaDados(a) {
                 data_final = data_inicial;
             }
             var diff = Math.ceil(Math.abs((data_final - data_inicial) / (24 * 60 * 60 * 1000))) + 1;
-   diff = 31;
- if (j==11) diff = 8;
- if (j==9) diff = 22;
- if (j==10) diff = 16;
+ //  diff = 31;
+ //if (j==11) diff = 8;
+ //if (j==9) diff = 22;
+ //if (j==10) diff = 16;
             participacao+= diff * dadosMineracao["gpus"][j][2];
             placas.push(dadosMineracao["gpus"][j][1] + "("+diff+")");
             energia+= parseFloat(dadosMineracao["gpus"][j][3]);
@@ -202,7 +202,7 @@ function atualizaAReceber() {
     }).then(function (data) {
         document.getElementById("total_mhs").innerHTML = (data.data.currentStatistics.reportedHashrate / 1000000).toFixed(1) + " mh/s";
         areceber = data.data.currentStatistics.unpaid/1000000000000000000;
-        areceber = 0.22761358;
+        //areceber = 0.22761358;
         statusReceber(areceber);
         statusMinerado(mineradoatehoje);
         statusCarteira();
