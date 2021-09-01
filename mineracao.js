@@ -32,7 +32,7 @@ function pegaDados(a) {
     ultimopagamento_mais1 = ultimopagamento;
     ultimopagamento_mais1 = new Date(ultimopagamento_mais1.setDate(ultimopagamento_mais1.getDate() + 1));
     var ultimodiames = new Date((hoje.getYear() + 1900), hoje.getMonth() + 1, 0);
-
+    ultimodiames = 31;
     var totalParticipacao = 0;
     var totalMhs = 0;
     var totalEnergia = 0;
