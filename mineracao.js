@@ -68,7 +68,7 @@ function pegaDados(a) {
    diff = 31;
  if (j==11) diff = 8;
  if (j==9) diff = 22;
-/f (j==10) diff = 16;
+ if (j==10) diff = 16;
             participacao+= diff * dadosMineracao["gpus"][j][2];
             placas.push(dadosMineracao["gpus"][j][1] + "("+diff+")");
             energia+= parseFloat(dadosMineracao["gpus"][j][3]);
