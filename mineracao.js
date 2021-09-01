@@ -31,8 +31,8 @@ function pegaDados(a) {
     ultimopagamento = new Date(ultimopagamento[2], ultimopagamento[1] - 1, ultimopagamento[0]);
     ultimopagamento_mais1 = ultimopagamento;
     ultimopagamento_mais1 = new Date(ultimopagamento_mais1.setDate(ultimopagamento_mais1.getDate() + 1));
-    var ultimodiames = new Date((hoje.getYear() + 1900), hoje.getMonth() + 1, 0);
-    ultimodiames = 31;
+    var ultimodiames = new Date((hoje.getYear() + 1900), hoje.getMonth() + 1, 0)+1;
+
     var totalParticipacao = 0;
     var totalMhs = 0;
     var totalEnergia = 0;
