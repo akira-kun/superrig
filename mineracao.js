@@ -31,7 +31,7 @@ function pegaDados(a) {
     ultimopagamento = new Date(ultimopagamento[2], ultimopagamento[1] - 1, ultimopagamento[0]);
     ultimopagamento_mais1 = ultimopagamento;
     ultimopagamento_mais1 = new Date(ultimopagamento_mais1.setDate(ultimopagamento_mais1.getDate() + 1));
-    var ultimodiames = new Date((hoje.getYear() + 1900), hoje.getMonth() + 1, 0)+1;
+    var ultimodiames = new Date((hoje.getYear() + 1900), hoje.getMonth() + 1, 0);
 
     var totalParticipacao = 0;
     var totalMhs = 0;
@@ -65,8 +65,9 @@ function pegaDados(a) {
                 data_final = data_inicial;
             }
             var diff = Math.ceil(Math.abs((data_final - data_inicial) / (24 * 60 * 60 * 1000))) + 1;
-            if (j==11) diff = 8;
-            //diff = 31;
+           diff = 31;
+ if (j==11) diff = 8;
+if (j==10) diff = 16;
             participacao+= diff * dadosMineracao["gpus"][j][2];
             placas.push(dadosMineracao["gpus"][j][1] + "("+diff+")");
             energia+= parseFloat(dadosMineracao["gpus"][j][3]);
