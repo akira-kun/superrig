@@ -172,7 +172,7 @@ function statusMinerado(minerado) {
 }
 function statusCarteira() {
     var carteira = nacarteira;
-    document.getElementById("carteira").innerHTML = carteira.toFixed(5) + " ETH";
+    document.getElementById("carteira").innerHTML = carteira.toFixed(8) + " ETH";
     document.getElementById("carteira").nextSibling.innerHTML = "R$ " + (preco * carteira).toFixed(2);
 }
 
