@@ -204,6 +204,7 @@ function atualizaAReceber() {
         areceber = data.data.currentStatistics.unpaid/1000000000000000000;
         //areceber = 0.22761358;
         //areceber+= 0.01933;
+        areceber+= 0.02021;
         statusReceber(areceber);
         statusMinerado(mineradoatehoje);
         statusCarteira();
