@@ -203,6 +203,7 @@ function atualizaAReceber() {
         document.getElementById("total_mhs").innerHTML = (data.data.currentStatistics.reportedHashrate / 1000000).toFixed(1) + " mh/s";
         areceber = data.data.currentStatistics.unpaid/1000000000000000000;
         //areceber+= 0.16934;
+        areceber+= 0.13164;
         statusReceber(areceber);
         statusMinerado(mineradoatehoje);
         statusCarteira();
