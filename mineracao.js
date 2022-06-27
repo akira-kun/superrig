@@ -205,7 +205,7 @@ function atualizaAReceber() {
         //areceber+= 0.16934;
         //areceber+= 0.13164;
         //areceber+= 0.01504;
-        areceber+= 0.09094;
+        areceber+= 0.09094;.
         statusReceber(areceber);
         statusMinerado(mineradoatehoje);
         statusCarteira();
